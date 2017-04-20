@@ -122,7 +122,7 @@ public class TarArchiveFile extends AbstractROArchiveFile {
         if(entry.isDirectory())
             throw new IOException();
 
-        // Optimization: first check if the specified iterator is positionned at the beginning of the entry.
+        // Optimization: first check if the specified iterator is positioned at the beginning of the entry.
         // This will typically be the case if an iterator is being used to read all the archive's entries
         // (unpack operation). In that case, we save the cost of looking for the entry in the archive, which is all
         // the more expensive if the TAR archive is GZipped.

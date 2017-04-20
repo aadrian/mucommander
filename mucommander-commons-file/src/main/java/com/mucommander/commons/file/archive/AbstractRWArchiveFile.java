@@ -32,7 +32,7 @@ import com.mucommander.commons.file.UnsupportedFileOperationException;
  * In addition to the read-only operations defined by {@link com.mucommander.commons.file.archive.AbstractArchiveFile}, it provides
  * abstract methods for adding and deleting entries from the archive.
  *
- * The {@link #isWritable()} method impletemented by this class always returns <code>true</code>. However,
+ * The {@link #isWritable()} method implemented by this class always returns <code>true</code>. However,
  * write operations may not always be available depending on the underlying file (e.g. if random file access is
  * required). In that case, {@link #isWritable ()} should be overridden to return <code>true</code> only when
  * write operations are available.

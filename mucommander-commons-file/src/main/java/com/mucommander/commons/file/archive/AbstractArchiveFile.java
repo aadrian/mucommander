@@ -197,7 +197,7 @@ public abstract class AbstractArchiveFile extends ProxyFile {
 
     /**
      * Returns the {@link ArchiveEntryTree} instance corresponding to the root of the archive entry tree.
-     * The returned value can be <code>null</code> if the tree hasn't been intialized yet.
+     * The returned value can be <code>null</code> if the tree hasn't been initialized yet.
      *
      * @return the ArchiveEntryTree instance corresponding to the root of the archive entry tree
      */

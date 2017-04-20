@@ -36,7 +36,7 @@ public class JavaUtilZipEntryIterator implements ArchiveEntryIterator  {
     /** InputStream to the archive file */
     private ZipInputStream zin;
 
-    /** The current entry, where the ZipInputStream is currently positionned */
+    /** The current entry, where the ZipInputStream is currently positioned */
     private ArchiveEntry currentEntry;
 
 
@@ -60,9 +60,9 @@ public class JavaUtilZipEntryIterator implements ArchiveEntryIterator  {
     }
 
     /**
-     * Returns the current entry, where the <code>ZipInputStream</code> is currently positionned.
+     * Returns the current entry, where the <code>ZipInputStream</code> is currently positioned.
      *
-     * @return the current entry, where the <code>ZipInputStream</code> is currently positionned.
+     * @return the current entry, where the <code>ZipInputStream</code> is currently positioned.
      */
     ArchiveEntry getCurrentEntry() {
         return currentEntry;

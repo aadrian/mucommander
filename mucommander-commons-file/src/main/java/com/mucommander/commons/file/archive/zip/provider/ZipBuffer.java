@@ -21,7 +21,7 @@ package com.mucommander.commons.file.archive.zip.provider;
 
 /**
  * ZipBuffer is a C struct-like class that holds byte buffers that are used to convert Java values to Big Endian byte
- * arrays. It allows to reuse the same byte buffers instead of instanciating new ones for each conversion.
+ * arrays. It allows to reuse the same byte buffers instead of instantiating new ones for each conversion.
  *
  * @see ZipShort#getBytes(int, byte[], int)
  * @see ZipLong#getBytes(long, byte[], int)

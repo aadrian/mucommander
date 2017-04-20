@@ -207,7 +207,7 @@ public class ZipArchiveFile extends AbstractRWArchiveFile {
         // read the entry. This is much slower than the former method as the file cannot be seeked and needs
         // to be traversed to locate the entry we're interested in.
         else {
-            // Optimization: first check if the specified iterator is positionned at the beginning of the entry.
+            // Optimization: first check if the specified iterator is positioned at the beginning of the entry.
             // This will typically be the case if an iterator is being used to read all the archive's entries
             // (unpack operation). In that case, we save the cost of looking for the entry in the archive.
             if(entryIterator!=null && (entryIterator instanceof JavaUtilZipEntryIterator)) {

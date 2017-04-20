@@ -38,7 +38,7 @@ class ArArchiveEntryIterator implements ArchiveEntryIterator {
     /** InputStream to the the archive file */
     private InputStream in;
 
-    /** The current entry, where the stream is currently positionned */
+    /** The current entry, where the stream is currently positioned */
     private ArchiveEntry currentEntry;
 
     /** GNU variant: extended filenames contained in the special // entry's data */

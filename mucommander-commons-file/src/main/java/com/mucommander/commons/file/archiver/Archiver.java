@@ -228,7 +228,7 @@ public abstract class Archiver {
      * @param format an archive format
      * @return an Archiver for the specified format and that uses the given {@link AbstractFile} to write entries to ;
      * null if the specified format is not valid.
-     * @throws IOException if the file cannot be opened for write, or if an error occurred while intializing the archiver
+     * @throws IOException if the file cannot be opened for write, or if an error occurred while initializing the archiver
      * @throws UnsupportedFileOperationException if the underlying filesystem does not support write operations
      */
     public static Archiver getArchiver(AbstractFile file, int format) throws IOException, UnsupportedFileOperationException {
@@ -264,7 +264,7 @@ public abstract class Archiver {
      * @param format an archive format
      * @return an Archiver for the specified format and that uses the given {@link AbstractFile} to write entries to ;
      * null if the specified format is not valid.
-     * @throws IOException if an error occurred while intializing the archiver
+     * @throws IOException if an error occurred while initializing the archiver
      */
     public static Archiver getArchiver(OutputStream out, int format) throws IOException {
         Archiver archiver;
@@ -308,7 +308,7 @@ public abstract class Archiver {
      */
     protected static OutputStream createBzip2OutputStream(OutputStream out) throws IOException {
         // Writes the 2 magic bytes 'BZ', as required by CBZip2OutputStream. A quote from CBZip2OutputStream's Javadoc:
-        // "Attention: The caller is resonsible to write the two BZip2 magic bytes "BZ" to the specified stream
+        // "Attention: The caller is responsible to write the two BZip2 magic bytes "BZ" to the specified stream
         // prior to calling this constructor."
 
         out.write('B');
@@ -400,7 +400,7 @@ public abstract class Archiver {
 
 
     /**
-     * Closes the underlying OuputStream and ressources used by this Archiver to write the archive. This method
+     * Closes the underlying OuputStream and resources used by this Archiver to write the archive. This method
      * must be called when all entries have been added to the archive.
      */
     public abstract void close() throws IOException;

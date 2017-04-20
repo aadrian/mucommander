@@ -167,7 +167,7 @@ public abstract class AbstractFile implements FileAttributes {
      * </ul>
      * <p>
      * This default implementation returns the string representation of this file's {@link #getURL() url}, without
-     * the login and password parts. File implementations overridding this method should always return a path free of
+     * the login and password parts. File implementations overriding this method should always return a path free of
      * any login and password, so that it can safely be displayed to the end user or stored, without risking to
      * compromise sensitive information.
      * </p>

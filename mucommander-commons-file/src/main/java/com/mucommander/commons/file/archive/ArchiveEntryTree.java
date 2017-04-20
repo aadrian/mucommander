@@ -133,7 +133,7 @@ public class ArchiveEntryTree extends DefaultMutableTreeNode {
             }
 
             if(matchNode==null)
-                return null;    // No node maching the provided path, return null
+                return null;    // No node matching the provided path, return null
 
             currentNode = matchNode;
         }

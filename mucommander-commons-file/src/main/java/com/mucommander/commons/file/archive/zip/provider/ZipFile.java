@@ -37,7 +37,7 @@ import java.util.zip.ZipException;
  * This class is a replacement for <code>java.util.ZipFile</code> with some extra functionalities:
  * <ul>
  *  <li>Ability to add or remove entries 'on-the-fly', i.e. without rewriting the whole archive.
- *  <li>Advanced encoding support for filenames and comments. UTF-8 is used for parsing entries that explicitely declare
+ *  <li>Advanced encoding support for filenames and comments. UTF-8 is used for parsing entries that explicitly declare
  * using UTF-8 (as per Zip specs). For entries that do not use UTF-8, the encoding is auto-detected (best effort).
  * Alternatively, the encoding used for parsing entries can be specified if it is known in advance. For new entries
  * added with {@link #addEntry(ZipEntry)}, UTF-8 is always used and declared as such in the Zip headers.
@@ -691,7 +691,7 @@ public class ZipFile implements ZipConstants {
 
     /**
      * Calulcates the data offset of the entry which starts at the given ZipEntryInfo.headerOffset and stores the result
-     * in ZipEntryInfo.dataOffset. After calling this method, the RandomAccessInputStream will be positionned at the
+     * in ZipEntryInfo.dataOffset. After calling this method, the RandomAccessInputStream will be positioned at the
      * beginning of the filename field.
      *
      * @param entryInfo the ZipEntryInfo object in which to store the data offset

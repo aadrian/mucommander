@@ -19,7 +19,7 @@
 package com.mucommander.commons.io.base64;
 
 /**
- * This class represents an immutable Base64 encoding/decoding table. It provides the correspondance between encoded
+ * This class represents an immutable Base64 encoding/decoding table. It provides the correspondnce between encoded
  * and decoded characters (and vice-versa), and the character to use for padding.
  * <p>
  * A number of common Base64 tables are provided as public static final fields of this class:

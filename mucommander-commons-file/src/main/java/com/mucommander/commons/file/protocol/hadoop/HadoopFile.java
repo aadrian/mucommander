@@ -416,7 +416,7 @@ public abstract class HadoopFile extends ProtocolFile {
     protected abstract FileSystem getHadoopFileSystem(FileURL realm) throws IOException;
 
     /**
-     * Sets default file attributes values for the file represented by the given URL. The atributes that need to be
+     * Sets default file attributes values for the file represented by the given URL. The attributes that need to be
      * set are those that are protocol-specific.
      *
      * @param url URL of the file for which to set attributes

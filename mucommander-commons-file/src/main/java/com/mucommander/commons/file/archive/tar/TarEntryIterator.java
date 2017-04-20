@@ -37,7 +37,7 @@ class TarEntryIterator implements ArchiveEntryIterator {
     /** InputStream to the archive file */
     private TarInputStream tin;
 
-    /** The current entry, where the TarInputStream is currently positionned */
+    /** The current entry, where the TarInputStream is currently positioned */
     private ArchiveEntry currentEntry;
 
 
@@ -61,10 +61,10 @@ class TarEntryIterator implements ArchiveEntryIterator {
     }
 
     /**
-     * Returns the current entry where the {@link #getTarInputStream()} TarInputStream} is currently positionned.
+     * Returns the current entry where the {@link #getTarInputStream()} TarInputStream} is currently positioned.
      * The returned value is <code>null</code> until {@link #nextEntry()} is called for the first time.
      *
-     * @return the current entry where the {@link #getTarInputStream()} TarInputStream} is currently positionned.
+     * @return the current entry where the {@link #getTarInputStream()} TarInputStream} is currently positioned.
      */
     ArchiveEntry getCurrentEntry() {
         return currentEntry;
